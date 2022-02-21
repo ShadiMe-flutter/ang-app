@@ -53,6 +53,14 @@
               ],
               "outputHashing": "all"
             },
+            "test": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -72,6 +80,9 @@
             },
             "development": {
               "browserTarget": "authentication:build:development"
+            },
+            "test": {
+              "browserTarget": "authentication:build:test"
             }
           },
           "defaultConfiguration": "development"
